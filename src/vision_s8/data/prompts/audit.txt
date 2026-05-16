@@ -1,0 +1,39 @@
+Act as an E-commerce Photography Expert and Marketing Specialist.
+
+Analyze this product image and provide a comprehensive audit report in JSON format:
+
+{
+    "overall_score": <1-10 score>,
+    "scores": {
+        "lighting": <1-10>,
+        "composition": <1-10>,
+        "background": <1-10>,
+        "product_focus": <1-10>,
+        "color_accuracy": <1-10>,
+        "sharpness": <1-10>,
+        "professionalism": <1-10>
+    },
+    "technical_analysis": {
+        "estimated_lighting_type": "<natural/studio/mixed/poor>",
+        "background_type": "<white/colored/lifestyle/cluttered>",
+        "product_visibility": "<excellent/good/fair/poor>",
+        "image_quality": "<high/medium/low>"
+    },
+    "strengths": [
+        "<strength 1>",
+        "<strength 2>",
+        "<strength 3>"
+    ],
+    "improvements": [
+        {
+            "issue": "<specific issue>",
+            "priority": "<high/medium/low>",
+            "suggestion": "<actionable improvement>"
+        }
+    ],
+    "professional_assessment": "<2-3 sentence overall assessment>",
+    "competitor_comparison": "<how this compares to typical high-end product photography>"
+}
+
+Be specific, actionable, and focus on improvements that will increase conversion rates.
+Return ONLY valid JSON, no additional text.

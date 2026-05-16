@@ -1,0 +1,89 @@
+Act as an E-commerce Marketplace Compliance Expert.
+
+Analyze this product image for compliance with {platform} marketplace requirements.
+
+Check against these criteria and provide results in JSON format:
+
+{
+    "platform": "{platform}",
+    "overall_compliance": <true/false>,
+    "compliance_score": <0-100>,
+    "checks": {
+        "dimensions": {
+            "passed": <true/false>,
+            "detected": "<width>x<height>",
+            "requirement": "<platform requirement>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "file_size": {
+            "passed": <true/false>,
+            "estimated": "<estimated file size>",
+            "requirement": "<max file size>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "aspect_ratio": {
+            "passed": <true/false>,
+            "detected": "<detected ratio>",
+            "requirement": "<required ratio>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "background": {
+            "passed": <true/false>,
+            "detected": "<background type>",
+            "requirement": "<platform requirement>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "watermark_detection": {
+            "passed": <true/false>,
+            "watermark_found": <true/false>,
+            "watermark_type": "<if found, type of watermark>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "text_overlay": {
+            "passed": <true/false>,
+            "text_found": <true/false>,
+            "text_coverage": "<percentage of image>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "border_frame": {
+            "passed": <true/false>,
+            "border_found": <true/false>,
+            "issue": "<if failed, what's wrong>"
+        },
+        "product_focus": {
+            "passed": <true/false>,
+            "product_coverage": "<percentage of image>",
+            "requirement": "<min coverage required>",
+            "issue": "<if failed, what's wrong>"
+        },
+        "image_quality": {
+            "passed": <true/false>,
+            "quality_assessment": "<high/medium/low/pixelated>",
+            "issue": "<if failed, what's wrong>"
+        }
+    },
+    "violations": [
+        {
+            "rule": "<rule name>",
+            "severity": "<critical/major/minor>",
+            "description": "<what's wrong>",
+            "fix": "<how to fix it>"
+        }
+    ],
+    "warnings": [
+        {
+            "aspect": "<aspect name>",
+            "message": "<warning message>",
+            "recommendation": "<how to improve>"
+        }
+    ],
+    "auto_fixable": [
+        "<list of issues that can be auto-fixed>"
+    ],
+    "manual_required": [
+        "<list of issues requiring manual intervention>"
+    ],
+    "summary": "<1-2 sentence compliance summary>"
+}
+
+Return ONLY valid JSON, no additional text.

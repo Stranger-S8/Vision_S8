@@ -1,0 +1,62 @@
+Act as a Professional Product Photography Editor and Image Enhancement Specialist.
+
+Analyze this product image and provide detailed enhancement recommendations in JSON format:
+
+{
+    "current_assessment": {
+        "overall_quality": <1-10>,
+        "enhancement_potential": "<high/medium/low>",
+        "estimated_improvement": "<percentage improvement possible>"
+    },
+    "enhancements": {
+        "background_removal": {
+            "recommended": <true/false>,
+            "reason": "<why or why not>",
+            "suggested_background": "<white/gradient/lifestyle/custom color>"
+        },
+        "lighting_adjustment": {
+            "recommended": <true/false>,
+            "adjustments": {
+                "brightness": <-100 to 100>,
+                "contrast": <-100 to 100>,
+                "highlights": <-100 to 100>,
+                "shadows": <-100 to 100>
+            },
+            "reason": "<specific lighting issues to fix>"
+        },
+        "color_correction": {
+            "recommended": <true/false>,
+            "adjustments": {
+                "saturation": <-100 to 100>,
+                "vibrance": <-100 to 100>,
+                "temperature": <-100 to 100>,
+                "tint": <-100 to 100>
+            },
+            "reason": "<color issues to address>"
+        },
+        "cropping": {
+            "recommended": <true/false>,
+            "suggested_aspect_ratio": "<1:1/4:3/16:9/original>",
+            "crop_focus": "<center/rule_of_thirds/product_centered>",
+            "reason": "<why cropping would help>"
+        },
+        "sharpening": {
+            "recommended": <true/false>,
+            "intensity": "<light/medium/strong>",
+            "reason": "<sharpness issues>"
+        },
+        "shadow_addition": {
+            "recommended": <true/false>,
+            "shadow_type": "<drop/natural/reflection>",
+            "intensity": "<subtle/medium/pronounced>",
+            "reason": "<why shadow would help>"
+        }
+    },
+    "enhancement_order": [
+        "<list enhancements in recommended order of application>"
+    ],
+    "expected_score_after": <1-10>,
+    "professional_notes": "<additional tips for best results>"
+}
+
+Return ONLY valid JSON, no additional text.

@@ -1,0 +1,176 @@
+{
+    "platforms": {
+        "amazon": {
+            "name": "Amazon",
+            "display_name": "Amazon Marketplace",
+            "requirements": {
+                "min_width": 1000,
+                "min_height": 1000,
+                "max_width": 10000,
+                "max_height": 10000,
+                "max_file_size_mb": 10,
+                "allowed_formats": ["JPEG", "PNG", "GIF", "TIFF"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["1:1"],
+                "background": "pure_white",
+                "background_rgb": [255, 255, 255],
+                "product_coverage_min": 85,
+                "product_coverage_max": 100,
+                "watermarks_allowed": false,
+                "text_allowed": false,
+                "borders_allowed": false,
+                "logos_allowed": false
+            },
+            "best_practices": [
+                "Use pure white background (RGB 255,255,255)",
+                "Product should fill 85% or more of the image",
+                "No props, accessories, or text unless part of product",
+                "High resolution for zoom functionality",
+                "Show product clearly without lifestyle elements for main image"
+            ],
+            "main_image_rules": [
+                "Must be on pure white background",
+                "Must show entire product",
+                "No text, graphics, or watermarks",
+                "Professional photography required"
+            ],
+            "additional_image_rules": [
+                "Can show lifestyle/in-use images",
+                "Can include infographics",
+                "Can show product from different angles",
+                "Can include size charts"
+            ]
+        },
+        "shopify": {
+            "name": "Shopify",
+            "display_name": "Shopify Store",
+            "requirements": {
+                "min_width": 800,
+                "min_height": 800,
+                "max_width": 4472,
+                "max_height": 4472,
+                "max_file_size_mb": 20,
+                "allowed_formats": ["JPEG", "PNG", "GIF", "WebP"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["1:1", "4:3", "3:4"],
+                "background": "flexible",
+                "product_coverage_min": 70,
+                "watermarks_allowed": true,
+                "text_allowed": true,
+                "borders_allowed": true,
+                "logos_allowed": true
+            },
+            "best_practices": [
+                "Consistent image sizes across products",
+                "Square format recommended for grid layouts",
+                "Consistent lighting and styling",
+                "Show multiple angles",
+                "Include lifestyle images"
+            ]
+        },
+        "instagram": {
+            "name": "Instagram",
+            "display_name": "Instagram Shopping",
+            "requirements": {
+                "min_width": 320,
+                "min_height": 320,
+                "max_width": 1440,
+                "max_height": 1440,
+                "max_file_size_mb": 8,
+                "allowed_formats": ["JPEG", "PNG"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["1:1", "4:5", "1.91:1"],
+                "recommended_ratio": "1:1",
+                "background": "flexible",
+                "product_coverage_min": 50,
+                "watermarks_allowed": false,
+                "text_allowed": true,
+                "text_coverage_max": 20
+            },
+            "best_practices": [
+                "Square format (1:1) for feed posts",
+                "Vertical format (4:5) for maximum screen coverage",
+                "Lifestyle and context-rich images perform best",
+                "Authentic, less polished look often preferred",
+                "Good for user-generated content style"
+            ]
+        },
+        "ebay": {
+            "name": "eBay",
+            "display_name": "eBay Marketplace",
+            "requirements": {
+                "min_width": 500,
+                "min_height": 500,
+                "max_width": 9000,
+                "max_height": 9000,
+                "max_file_size_mb": 12,
+                "allowed_formats": ["JPEG", "PNG", "GIF"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["1:1"],
+                "background": "white_or_light",
+                "product_coverage_min": 80,
+                "watermarks_allowed": false,
+                "text_allowed": false,
+                "borders_allowed": true
+            },
+            "best_practices": [
+                "White or light neutral background",
+                "No watermarks, logos, or text",
+                "Show actual item being sold",
+                "Include multiple angles",
+                "Show any defects for used items"
+            ]
+        },
+        "etsy": {
+            "name": "Etsy",
+            "display_name": "Etsy Marketplace",
+            "requirements": {
+                "min_width": 2000,
+                "min_height": 2000,
+                "max_file_size_mb": 20,
+                "allowed_formats": ["JPEG", "PNG", "GIF"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["4:3", "3:2", "1:1"],
+                "recommended_ratio": "4:3",
+                "background": "flexible",
+                "product_coverage_min": 60,
+                "watermarks_allowed": true,
+                "text_allowed": true
+            },
+            "best_practices": [
+                "Lifestyle images perform well",
+                "Show scale with props",
+                "Natural lighting preferred",
+                "Consistent brand aesthetic",
+                "Show handmade/artisan quality"
+            ]
+        },
+        "walmart": {
+            "name": "Walmart",
+            "display_name": "Walmart Marketplace",
+            "requirements": {
+                "min_width": 1000,
+                "min_height": 1000,
+                "max_width": 5000,
+                "max_height": 5000,
+                "max_file_size_mb": 5,
+                "allowed_formats": ["JPEG", "PNG"],
+                "preferred_format": "JPEG",
+                "aspect_ratios": ["1:1"],
+                "background": "pure_white",
+                "background_rgb": [255, 255, 255],
+                "product_coverage_min": 85,
+                "watermarks_allowed": false,
+                "text_allowed": false,
+                "borders_allowed": false
+            },
+            "best_practices": [
+                "Pure white background required",
+                "No watermarks or promotional text",
+                "Product must be clearly visible",
+                "High-quality professional images",
+                "Similar requirements to Amazon"
+            ]
+        }
+    }
+}

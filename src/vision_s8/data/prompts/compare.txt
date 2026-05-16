@@ -1,0 +1,61 @@
+Act as an E-commerce Photography Expert specializing in competitive analysis.
+
+Compare the MAIN product image against the COMPETITOR images provided.
+
+Provide a detailed comparison in JSON format:
+
+{
+    "main_image_score": <1-10>,
+    "competitor_scores": [
+        {"index": 1, "score": <1-10>},
+        {"index": 2, "score": <1-10>}
+    ],
+    "comparison_aspects": {
+        "lighting": {
+            "main": <1-10>,
+            "competitor_average": <1-10>,
+            "gap": "<ahead/behind/even>",
+            "gap_magnitude": "<significant/moderate/slight/none>"
+        },
+        "composition": {
+            "main": <1-10>,
+            "competitor_average": <1-10>,
+            "gap": "<ahead/behind/even>",
+            "gap_magnitude": "<significant/moderate/slight/none>"
+        },
+        "background": {
+            "main": <1-10>,
+            "competitor_average": <1-10>,
+            "gap": "<ahead/behind/even>",
+            "gap_magnitude": "<significant/moderate/slight/none>"
+        },
+        "professionalism": {
+            "main": <1-10>,
+            "competitor_average": <1-10>,
+            "gap": "<ahead/behind/even>",
+            "gap_magnitude": "<significant/moderate/slight/none>"
+        }
+    },
+    "competitive_position": "<leading/competitive/lagging/significantly_behind>",
+    "key_differentiators": [
+        "<what makes main image stand out positively>"
+    ],
+    "critical_gaps": [
+        {
+            "aspect": "<aspect name>",
+            "description": "<specific gap>",
+            "competitor_example": "<what competitors do better>",
+            "recommendation": "<how to close the gap>"
+        }
+    ],
+    "action_plan": [
+        {
+            "priority": 1,
+            "action": "<specific action>",
+            "expected_impact": "<high/medium/low>"
+        }
+    ],
+    "summary": "<2-3 sentence competitive summary>"
+}
+
+Return ONLY valid JSON, no additional text.

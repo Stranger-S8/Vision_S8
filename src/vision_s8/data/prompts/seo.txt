@@ -1,0 +1,56 @@
+Act as an SEO and E-commerce Content Optimization Specialist.
+
+Analyze this product image and generate SEO-optimized content in JSON format:
+
+{
+    "product_detection": {
+        "detected_product": "<what product is shown>",
+        "category": "<product category>",
+        "subcategory": "<more specific category>",
+        "detected_attributes": [
+            "<color>", "<material>", "<style>", "<size indicator>"
+        ]
+    },
+    "alt_text": {
+        "primary": "<60-125 chars, descriptive, keyword-rich alt text>",
+        "short": "<under 60 chars for thumbnails>",
+        "detailed": "<125-250 chars for detailed views>"
+    },
+    "filename_suggestions": [
+        "<seo-friendly-filename-1.jpg>",
+        "<seo-friendly-filename-2.jpg>",
+        "<seo-friendly-filename-3.jpg>"
+    ],
+    "title_suggestions": [
+        "<SEO title suggestion 1>",
+        "<SEO title suggestion 2>"
+    ],
+    "meta_description": "<150-160 chars meta description for image>",
+    "keywords": {
+        "primary": ["<main keyword 1>", "<main keyword 2>"],
+        "secondary": ["<supporting keyword 1>", "<supporting keyword 2>"],
+        "long_tail": ["<long tail phrase 1>", "<long tail phrase 2>"]
+    },
+    "schema_markup_suggestions": {
+        "product_name": "<detected product name>",
+        "brand": "<if detectable>",
+        "color": "<if detectable>",
+        "material": "<if detectable>"
+    },
+    "accessibility": {
+        "screen_reader_description": "<detailed description for visually impaired>",
+        "key_visual_elements": ["<element 1>", "<element 2>"]
+    },
+    "platform_specific": {
+        "pinterest": "<pinterest-optimized description>",
+        "instagram": "<instagram caption suggestion with hashtags>",
+        "google_shopping": "<google shopping optimized title>"
+    },
+    "seo_score": <1-10>,
+    "optimization_tips": [
+        "<tip 1 to improve SEO>",
+        "<tip 2 to improve SEO>"
+    ]
+}
+
+Return ONLY valid JSON, no additional text.

@@ -1,0 +1,53 @@
+Act as an E-commerce Conversion Rate Optimization Expert and A/B Testing Specialist.
+
+Analyze these product image variants for the SAME product and predict which will perform best.
+
+Provide your analysis in JSON format:
+
+{
+    "variants": [
+        {
+            "index": 1,
+            "predicted_ctr_score": <1-100>,
+            "predicted_conversion_score": <1-100>,
+            "overall_effectiveness": <1-10>,
+            "strengths": ["<strength 1>", "<strength 2>"],
+            "weaknesses": ["<weakness 1>", "<weakness 2>"]
+        }
+    ],
+    "ranking": [
+        {
+            "rank": 1,
+            "variant_index": <index>,
+            "confidence": "<high/medium/low>",
+            "expected_performance_lift": "<percentage vs average>"
+        }
+    ],
+    "winner_analysis": {
+        "winning_variant": <index>,
+        "key_winning_factors": [
+            "<factor 1>",
+            "<factor 2>",
+            "<factor 3>"
+        ],
+        "psychological_triggers": [
+            "<what makes this variant more appealing>"
+        ]
+    },
+    "testing_recommendations": {
+        "primary_hypothesis": "<what the winning elements suggest>",
+        "secondary_tests": [
+            "<additional A/B tests to run>"
+        ],
+        "sample_size_recommendation": "<suggested test duration/volume>"
+    },
+    "detailed_comparison": {
+        "lighting_impact": "<how lighting differs and affects performance>",
+        "angle_impact": "<how angles differ and affect performance>",
+        "styling_impact": "<how styling differs and affects performance>",
+        "background_impact": "<how backgrounds differ and affect performance>"
+    },
+    "summary": "<2-3 sentence summary of findings and recommendation>"
+}
+
+Return ONLY valid JSON, no additional text.
