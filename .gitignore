@@ -42,3 +42,13 @@ htmlcov/
 
 # Model cache (rembg downloads)
 .u2net/
+
+# Secrets (do not commit)
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
